@@ -138,7 +138,6 @@ const Page = () => {
       alternatives={alternatives}
       pitfalls={pitfalls}
       checklist={checklist}
-      jsonLd={jsonLd}
     />
   );
 };
