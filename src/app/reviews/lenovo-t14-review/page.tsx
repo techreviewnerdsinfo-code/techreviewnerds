@@ -4,9 +4,9 @@ import { findByAsin } from '@/lib/data/getProducts';
 import { buildProductOffer, buildFAQPage } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
-  title: 'Lenovo ThinkPad T14 Review – A Trusty Business Companion',
+  title: 'Lenovo ThinkPad T14 Review – Business Workhorse',
   description:
-    'Our in‑depth review of the Lenovo ThinkPad T14 covers performance, build quality, battery life and more to help you decide if this business laptop is right for you.',
+    'Our review of the Lenovo ThinkPad T14 (2025) covers its durability, performance and battery life to see if it’s still the go‑to for professionals.',
   alternates: {
     canonical: 'https://techreviewnerds.com/reviews/lenovo-t14-review',
   },
@@ -14,65 +14,67 @@ export const metadata: Metadata = {
 
 const Page = () => {
   const product = findByAsin('MOCK-T14-2025');
-  // Fallback in case the product isn't found
   if (!product) return null;
+
   const overview =
-    'The ThinkPad T14 continues Lenovo’s tradition of durable business laptops with excellent keyboards and robust security features. Equipped with the latest Ryzen Pro chips, it balances portability with productivity.';
+    'Lenovo’s ThinkPad T14 continues its legacy as a durable and reliable business laptop. With updated processors and an improved display, the 2025 model aims to balance portability and performance.';
   const strengths = [
-    'Excellent build quality with MIL‑STD durability',
-    'One of the best keyboards on any laptop',
-    'Strong battery life for a 14‑inch machine',
-    'Upgradeable storage and memory',
+    'Robust chassis and excellent build quality',
+    'Great keyboard and TrackPoint',
+    'Wide port selection and user‑serviceable components',
+    'Long battery life',
   ];
   const weaknesses = [
-    'Tinny speakers',
-    'Expensive compared to consumer laptops',
-    'Integrated graphics limit gaming and creative workloads',
+    'Display isn’t as bright or vivid as competitors',
+    'Heavier than ultrabooks',
+    'Speakers are average',
   ];
   const verdict =
-    'If you need a no‑nonsense workhorse that will last for years, the ThinkPad T14 is easy to recommend. Its keyboard and build quality are unmatched, though its price and graphics performance may deter casual users.';
+    'The ThinkPad T14 remains a solid choice for professionals who prioritise durability, serviceability and typing comfort. It may not be the lightest or most modern‑looking machine, but it’s built to last.';
+
   const alternatives = [
-    { href: '/comparisons/macbook-air-vs-xps-13', title: 'MacBook Air vs XPS 13' },
+    { href: '/best-business-laptops', title: 'Best business laptops 2025' },
+    { href: '/comparisons/dell-g15-vs-msi-katana-15', title: 'Dell G15 vs MSI Katana 15 comparison' },
     { href: '/reviews/rog-zephyrus-m2-review', title: 'ROG Zephyrus M2 review' },
   ];
+
   const faqs = [
     {
-      question: 'Is the ThinkPad T14 good for programming?',
-      answer:
-        'Yes. Its comfortable keyboard, durable build and ample processing power make it a favourite among developers and IT professionals.',
+      question: 'Is the RAM upgradeable on the T14?',
+      answer: 'Yes. The T14 has one soldered module and one SODIMM slot, allowing memory upgrades.',
     },
     {
-      question: 'Can I upgrade the RAM or storage?',
-      answer:
-        'The T14 allows upgrades for both RAM and storage, but you’ll need to remove the bottom panel. Lenovo offers service manuals to guide the process.',
+      question: 'Does it have a touchscreen option?',
+      answer: 'The T14 can be configured with a touch display, though battery life may be reduced compared to non‑touch models.',
     },
     {
-      question: 'Does it come with a warranty?',
-      answer:
-        'Lenovo includes a one‑year warranty as standard. Extended and onsite warranties are available at extra cost.',
+      question: 'How durable is the chassis?',
+      answer: 'The ThinkPad T14 meets MIL‑STD 810H standards for durability and has a spill‑resistant keyboard.',
     },
   ];
+
   const productOfferJson = buildProductOffer({
     name: product.title,
     description: product.features.join(', '),
     image: `https://techreviewnerds.com${product.image}`,
     brand: 'Lenovo',
-    price: parseFloat(product.price.replace(/[^0-9.]/g, '')),
-    priceCurrency: 'USD',
+    price: product.price.replace(/[^0-9.]/g, ''),
     url: `https://techreviewnerds.com/reviews/${product.asin.toLowerCase()}-review`,
-    rating: product.rating,
   });
+
   const faqJson = buildFAQPage(faqs);
+
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [JSON.parse(productOfferJson), JSON.parse(faqJson)],
   });
+
   return (
     <ReviewTemplate
       breadcrumbs={[
         { label: 'Home', href: '/' },
         { label: 'Reviews', href: '/' },
-        { label: 'Lenovo T14', href: '/reviews/lenovo-t14-review' },
+        { label: 'Lenovo ThinkPad T14', href: '/reviews/lenovo-t14-review' },
       ]}
       title="Lenovo ThinkPad T14 review"
       overview={overview}
