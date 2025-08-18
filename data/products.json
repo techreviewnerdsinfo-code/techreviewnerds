@@ -1,47 +1,206 @@
 [
   {
-    "id": 1,
-    "slug": "budget-laptop-1",
-    "name": "Budget Laptop 1",
-    "category": "budget",
-    "price": 499,
-    "rating": 4.2,
-    "image": "/images/budget-laptop-1.jpg",
+    "asin": "MOCK-XPS13-2025",
+    "title": "Dell XPS 13 (Mock)",
+    "image": "/images/xps13.jpg",
+    "price": "$999.00",
+    "rating": 4.5,
+    "features": ["13.4\" FHD+", "Intel i7-1360P", "16GB RAM", "512GB SSD", "2.6 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "business", "travel"],
     "specs": {
-      "processor": "Intel Core i5",
-      "ram": "8GB",
-      "storage": "256GB SSD",
-      "screen": "15-inch"
-    }
-  },
-  {
-    "id": 2,
-    "slug": "gaming-laptop-1",
-    "name": "Gaming Laptop 1",
-    "category": "gaming",
-    "price": 1299,
-    "rating": 4.6,
-    "image": "/images/gaming-laptop-1.jpg",
-    "specs": {
-      "processor": "Intel Core i7",
+      "cpu": "i7-1360P",
       "ram": "16GB",
       "storage": "512GB SSD",
-      "screen": "17-inch"
+      "weight": "2.6 lb",
+      "battery": "12–14h"
     }
   },
   {
-    "id": 3,
-    "slug": "ultrabook-laptop-1",
-    "name": "Ultrabook Laptop 1",
-    "category": "ultrabook",
-    "price": 999,
-    "rating": 4.4,
-    "image": "/images/ultrabook-laptop-1.jpg",
+    "asin": "MOCK-MACAIR-M2-2025",
+    "title": "MacBook Air M2 (Mock)",
+    "image": "/images/macbook-air-m2.jpg",
+    "price": "$1,099.00",
+    "rating": 4.6,
+    "features": ["13.6\" Liquid Retina", "Apple M2", "16GB Unified RAM", "512GB SSD", "2.7 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "business", "travel"],
     "specs": {
-      "processor": "Intel Core i5",
+      "cpu": "M2",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "2.7 lb",
+      "battery": "18h"
+    }
+  },
+  {
+    "asin": "MOCK-ZEPHYRUS-M2-2025",
+    "title": "ASUS ROG Zephyrus M2 (Mock)",
+    "image": "/images/asus-rog-zephyrus-m2.jpg",
+    "price": "$2,199.00",
+    "rating": 4.5,
+    "features": ["16\" QHD 240Hz", "Ryzen 9 7900HS", "RTX 4070", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "engineering"],
+    "specs": {
+      "cpu": "Ryzen 9 7900HS",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "4.6 lb",
+      "battery": "8h"
+    }
+  },
+  {
+    "asin": "MOCK-T14-2025",
+    "title": "Lenovo ThinkPad T14 (Mock)",
+    "image": "/images/lenovo-t14.jpg",
+    "price": "$1,499.00",
+    "rating": 4.3,
+    "features": ["14\" FHD", "Ryzen 7 Pro 5850U", "16GB RAM", "512GB SSD", "3.2 lb"],
+    "buy_url": "#",
+    "use_cases": ["business", "student", "developer"],
+    "specs": {
+      "cpu": "Ryzen 7 Pro 5850U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "3.2 lb",
+      "battery": "12h"
+    }
+  },
+  {
+    "asin": "MOCK-ASP5-2025",
+    "title": "Acer Aspire 5 (Mock)",
+    "image": "/images/acer-aspire-5.jpg",
+    "price": "$499.00",
+    "rating": 4.0,
+    "features": ["15.6\" FHD", "Core i5-1235U", "8GB RAM", "512GB SSD", "3.6 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "budget"],
+    "specs": {
+      "cpu": "Core i5-1235U",
       "ram": "8GB",
       "storage": "512GB SSD",
-      "screen": "13-inch"
+      "weight": "3.6 lb",
+      "battery": "10h"
+    }
+  },
+  {
+    "asin": "MOCK-HP15Z-2025",
+    "title": "HP 15z (Mock)",
+    "image": "/images/hp-15z.jpg",
+    "price": "$399.00",
+    "rating": 3.8,
+    "features": ["15.6\" HD", "Ryzen 3 3250U", "8GB RAM", "256GB SSD", "3.9 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "budget"],
+    "specs": {
+      "cpu": "Ryzen 3 3250U",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "weight": "3.9 lb",
+      "battery": "8h"
+    }
+  },
+  {
+    "asin": "MOCK-KATANA15-2025",
+    "title": "MSI Katana 15 (Mock)",
+    "image": "/images/msi-katana-15.jpg",
+    "price": "$1,099.00",
+    "rating": 4.0,
+    "features": ["15.6\" FHD 144Hz", "Core i7-12650H", "RTX 4050", "16GB RAM", "512GB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "student", "budget"],
+    "specs": {
+      "cpu": "Core i7-12650H",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "4.9 lb",
+      "battery": "6h"
+    }
+  },
+  {
+    "asin": "MOCK-PRED16-2025",
+    "title": "Acer Predator Helios 16 (Mock)",
+    "image": "/images/acer-predator-helios-16.jpg",
+    "price": "$1,599.00",
+    "rating": 4.3,
+    "features": ["16\" FHD 240Hz", "Core i7-13700HX", "RTX 4060", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "engineering"],
+    "specs": {
+      "cpu": "Core i7-13700HX",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "5.7 lb",
+      "battery": "5h"
+    }
+  },
+  {
+    "asin": "MOCK-ALIENX16-2025",
+    "title": "Alienware x16 (Mock)",
+    "image": "/images/alienware-x16.jpg",
+    "price": "$2,499.00",
+    "rating": 4.4,
+    "features": ["16\" QHD 240Hz", "Core i9-13900HX", "RTX 4080", "32GB RAM", "2TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "premium"],
+    "specs": {
+      "cpu": "Core i9-13900HX",
+      "ram": "32GB",
+      "storage": "2TB SSD",
+      "weight": "6.0 lb",
+      "battery": "4h"
+    }
+  },
+  {
+    "asin": "MOCK-FLEX5-2025",
+    "title": "Lenovo IdeaPad Flex 5 (Mock)",
+    "image": "/images/lenovo-ideapad-flex-5.jpg",
+    "price": "$699.00",
+    "rating": 4.1,
+    "features": ["14\" FHD Touch", "Ryzen 5 7530U", "16GB RAM", "512GB SSD", "Convertible"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "2-in-1"],
+    "specs": {
+      "cpu": "Ryzen 5 7530U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "3.3 lb",
+      "battery": "10h"
+    }
+  },
+  {
+    "asin": "MOCK-SPECTRE-2025",
+    "title": "HP Spectre x360 (Mock)",
+    "image": "/images/hp-spectre-x360.jpg",
+    "price": "$1,299.00",
+    "rating": 4.4,
+    "features": ["13.5\" OLED", "Core i7-1355U", "16GB RAM", "1TB SSD", "Convertible"],
+    "buy_url": "#",
+    "use_cases": ["business", "creative", "travel"],
+    "specs": {
+      "cpu": "Core i7-1355U",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "3.0 lb",
+      "battery": "13h"
+    }
+  },
+  {
+    "asin": "MOCK-G15-2025",
+    "title": "Dell G15 Gaming (Mock)",
+    "image": "/images/dell-g15.jpg",
+    "price": "$1,299.00",
+    "rating": 4.2,
+    "features": ["15.6\" FHD 165Hz", "Ryzen 7 7840HS", "RTX 4060", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "student", "budget"],
+    "specs": {
+      "cpu": "Ryzen 7 7840HS",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "5.5 lb",
+      "battery": "7h"
     }
   }
 ]

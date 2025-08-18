@@ -1,15 +1,11 @@
 export interface Product {
   id: number;
-  slug: string;
   name: string;
+  slug: string;
   category: string;
+  description: string;
   price: number;
   rating: number;
-  image: string;
-  specs: {
-    processor: string;
-    ram: string;
-    storage: string;
-    screen: string;
-  };
+  imageUrl: string;
+  specs: Record<string, string | number>;
 }

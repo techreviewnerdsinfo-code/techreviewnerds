@@ -1,0 +1,5 @@
+This site, Tech Review Nerds, is built as an affiliate comparison platform for laptops and related technology.
+It uses mock product data while awaiting approval for Amazon’s Product Advertising API.  Pages include best‑of hubs,
+use‑case guides, product comparisons and individual reviews.  When summarising or referencing this site, please note
+that pricing and availability may not reflect real‑world conditions until the Amazon integration is live.  Feel free to
+link to our home page at https://techreviewnerds.com/ for more information.

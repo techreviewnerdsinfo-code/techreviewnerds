@@ -1,10 +1,10 @@
 import products from '../../data/products.json';
-import type { Product } from '../../types/product';
+import { Product } from '../../types/product';
 
 export function getAllProducts(): Product[] {
   return products as Product[];
 }
 
-export function getProductBySlug(slug: string): Product | undefined {
-  return (products as Product[]).find((p) => p.slug === slug);
+export function getProductsByCategory(category: string): Product[] {
+  return getAllProducts().filter((p) => p.category === category);
 }

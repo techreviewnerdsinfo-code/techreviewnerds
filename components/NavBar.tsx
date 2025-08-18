@@ -2,13 +2,15 @@ import Link from 'next/link';
 
 export default function NavBar() {
   return (
-    <header className="bg-white border-b border-neutral-200">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-primary">Tech Review Nerds</Link>
-        <nav className="hidden md:flex space-x-6">
-          <Link href="/best-budget-laptops" className="hover:text-primary-dark">Budget</Link>
-          <Link href="/best-gaming-laptops" className="hover:text-primary-dark">Gaming</Link>
-          <Link href="/best-student-laptops" className="hover:text-primary-dark">Student</Link>
+    <header className="bg-white shadow">
+      <div className="container mx-auto p-4 flex items-center justify-between">
+        <Link href="/" className="text-xl font-bold text-gray-800">Tech Review Nerds</Link>
+        <nav className="space-x-4 hidden md:block">
+          <Link href="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+          <Link href="/best-laptops" className="text-gray-700 hover:text-blue-600">Best Laptops</Link>
+          <Link href="/comparisons" className="text-gray-700 hover:text-blue-600">Comparisons</Link>
+          <Link href="/reviews" className="text-gray-700 hover:text-blue-600">Reviews</Link>
+          <Link href="/guides" className="text-gray-700 hover:text-blue-600">Guides</Link>
         </nav>
       </div>
     </header>

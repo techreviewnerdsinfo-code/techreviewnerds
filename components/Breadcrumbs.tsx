@@ -1,30 +1,24 @@
-import React from 'react';
 import Link from 'next/link';
 
-interface BreadcrumbItem {
+export interface Crumb {
   label: string;
-  href: string;
+  href?: string;
 }
 
-interface BreadcrumbsProps {
-  items: BreadcrumbItem[];
-}
-
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
+export default function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
   return (
-    <nav aria-label="breadcrumbs" className="text-sm text-gray-600 mb-4">
-      <ol className="list-none p-0 inline-flex">
-        {items.map((item, index) => (
-          <li key={index} className="flex items-center">
-            {index > 0 && <span className="mx-2 text-gray-400">/</span>}
-            <Link href={item.href}>
-              <span className="hover:text-gray-900">{item.label}</span>
-            </Link>
-          </li>
-        ))}
-      </ol>
+    <nav aria-label="Breadcrumb" className="text-sm text-gray-600 mb-4">
+      {crumbs.map((crumb, index) => (
+        <span key={index}>
+          {crumb.href ? (
+            <>
+              <Link href={crumb.href} className="hover:underline">{crumb.label}</Link> /{' '}
+            </>
+          ) : (
+            <span className="text-gray-800 font-medium">{crumb.label}</span>
+          )}
+        </span>
+      ))}
     </nav>
   );
-};
-
-export default Breadcrumbs;
+}

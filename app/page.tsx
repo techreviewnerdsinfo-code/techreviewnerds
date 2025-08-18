@@ -1,26 +1,27 @@
-import Link from 'next/link';
-
 export default function HomePage() {
   return (
-    <section className="py-10">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Tech Review Nerds</h1>
-      <p className="mb-8 max-w-2xl text-lg text-neutral-700">
-        Your trusted source for laptop reviews, comparisons and guides. Discover the best laptops for every need and budget.
-      </p>
-      <div className="grid gap-6 md:grid-cols-3">
-        <Link href="/best-budget-laptops" className="block p-6 bg-white rounded-lg shadow-card hover:shadow-md transition">
-          <h2 className="text-xl font-semibold mb-2">Budget Laptops</h2>
-          <p>Explore top-rated laptops that won’t break the bank.</p>
-        </Link>
-        <Link href="/best-gaming-laptops" className="block p-6 bg-white rounded-lg shadow-card hover:shadow-md transition">
-          <h2 className="text-xl font-semibold mb-2">Gaming Laptops</h2>
-          <p>Find powerful rigs to level up your gameplay.</p>
-        </Link>
-        <Link href="/best-student-laptops" className="block p-6 bg-white rounded-lg shadow-card hover:shadow-md transition">
-          <h2 className="text-xl font-semibold mb-2">Student Laptops</h2>
-          <p>Choose the right laptop to ace your classes.</p>
-        </Link>
-      </div>
-    </section>
+    <div className="space-y-8">
+      <section className="text-center py-10 bg-blue-600 text-white rounded-lg">
+        <h1 className="text-4xl font-bold mb-2">Welcome to Tech Review Nerds</h1>
+        <p className="text-lg max-w-2xl mx-auto">Honest laptop reviews, head‑to‑head comparisons and buying guides for every need and budget.</p>
+      </section>
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Featured Categories</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="font-semibold mb-1">Budget Laptops</h3>
+            <p className="text-sm text-gray-600">Top picks under $500 and $1000.</p>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="font-semibold mb-1">Gaming Laptops</h3>
+            <p className="text-sm text-gray-600">Best rigs for every gamer.</p>
+          </div>
+          <div className="bg-white p-4 rounded shadow">
+            <h3 className="font-semibold mb-1">Student Laptops</h3>
+            <p className="text-sm text-gray-600">Portable machines for learning.</p>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
