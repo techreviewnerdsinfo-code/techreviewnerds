@@ -79,7 +79,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <div>
             <h2 className="text-lg font-semibold mb-2">Key Features</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-1">
-              {product.features.map((feature, index) => (
+              {product.features.map((feature: string, index: number) => (
                 <li key={index}>{feature}</li>
               ))}
             </ul>
