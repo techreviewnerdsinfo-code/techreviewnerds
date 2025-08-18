@@ -22,16 +22,12 @@ const Page = () => {
     { label: 'Battery', a: '7h', b: '6h' },
     { label: 'Price', a: '$1,299', b: '$1,099' },
   ];
-  const verdict = [
-    {
-      title: 'Choose the Dell G15 if…',
-      description: 'You want slightly higher graphics performance, a higher refresh display and don’t mind the extra weight.  The G15 also offers better thermals for extended play.',
-    },
-    {
-      title: 'Choose the MSI Katana 15 if…',
-      description: 'You prefer a lighter chassis and a lower price point while still enjoying capable gaming performance.  It’s a great value choice for students and budget‑minded gamers.',
-    },
-  ];
+  const verdict = {
+  forA:
+    'You want slightly higher graphics performance, a higher refresh display and don’t mind the extra weight.  The G15 also offers better thermals for extended play.',
+  forB:
+    'You prefer a lighter chassis and a lower price point while still enjoying capable gaming performance.  It’s a great value choice for students and budget‑minded gamers.',
+};
   const alternatives = [
     { href: '/best-gaming-laptops', title: 'Best gaming laptops 2025' },
     { href: '/comparisons/ryzen-7-vs-i7-laptop', title: 'Ryzen 7 vs Intel Core i7' },
