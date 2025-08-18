@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "slug": "budget-laptop-1",
+    "name": "Budget Laptop 1",
+    "category": "budget",
+    "price": 499,
+    "rating": 4.2,
+    "image": "/images/budget-laptop-1.jpg",
+    "specs": {
+      "processor": "Intel Core i5",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "screen": "15-inch"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "gaming-laptop-1",
+    "name": "Gaming Laptop 1",
+    "category": "gaming",
+    "price": 1299,
+    "rating": 4.6,
+    "image": "/images/gaming-laptop-1.jpg",
+    "specs": {
+      "processor": "Intel Core i7",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "screen": "17-inch"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "ultrabook-laptop-1",
+    "name": "Ultrabook Laptop 1",
+    "category": "ultrabook",
+    "price": 999,
+    "rating": 4.4,
+    "image": "/images/ultrabook-laptop-1.jpg",
+    "specs": {
+      "processor": "Intel Core i5",
+      "ram": "8GB",
+      "storage": "512GB SSD",
+      "screen": "13-inch"
+    }
+  }
+]
