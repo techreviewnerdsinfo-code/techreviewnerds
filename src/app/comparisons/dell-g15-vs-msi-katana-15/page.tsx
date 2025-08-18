@@ -55,6 +55,17 @@ const Page = () => {
     '@context': 'https://schema.org',
     '@graph': [JSON.parse(faqJson)],
   });
+
+const productA = {
+  name: 'Dell G15',
+  description: "Dell’s mid‑range gaming laptop with strong thermals and RTX 4060 graphics.",
+};
+
+const productB = {
+  name: 'MSI Katana 15',
+  description: "MSI’s lightweight gaming laptop with a more affordable RTX 4050 GPU.",
+};
+
   return (
     <ComparisonTemplate
       breadcrumbs={[
@@ -64,6 +75,8 @@ const Page = () => {
       ]}
       title="Dell G15 vs MSI Katana 15"
       intro="Two mid‑range gaming laptops go head‑to‑head.  We break down how the Dell G15 and MSI Katana 15 differ so you can choose the right machine for your needs."
+      productA={productA}
+      productB={productB}
       specs={specs}
       verdict={verdict}
       alternatives={alternatives}
