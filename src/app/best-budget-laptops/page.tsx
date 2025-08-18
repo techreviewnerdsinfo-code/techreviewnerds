@@ -109,19 +109,17 @@ const Page = () => {
     'Check the weight and battery life specs.',
     'Read our full reviews for more context.',
   ];
-  const itemListJson = buildItemList(
-    productsData.map((p) => ({
-      url: `https://techreviewnerds.com/reviews/${p.asin.toLowerCase()}-review`,
-      name: p.title,
-    }))
-  );
-  const faqJson = buildFAQPage(
-    faqs.map((f) => ({ question: f.question, answer: f.answer }))
-  );
-  const jsonLd = JSON.stringify({
-    '@context': 'https://schema.org',
-    '@graph': [JSON.parse(itemListJson), JSON.parse(faqJson)],
-  });
+  const itemListJson: string = buildItemList(
+  productsData.map((p) => ({
+    url: `https://techreviewnerds.com/reviews/${p.asin.toLowerCase()}-review`,
+    name: p.title,
+  }))
+) as string;
+
+  const faqJson: string = buildFAQPage(
+  faqs.map((f) => ({ question: f.question, answer: f.answer }))
+) as string;
+
   return (
     <BestOfHubTemplate
       breadcrumbs={[
