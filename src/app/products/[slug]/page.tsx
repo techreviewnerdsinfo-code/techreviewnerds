@@ -91,7 +91,8 @@ export default function ProductPage({ params }: ProductPageProps) {
                 {Object.entries(product.specs).map(([key, value]) => (
                   <tr key={key} className="odd:bg-gray-50">
                     <th className="text-left font-medium px-2 py-1 whitespace-nowrap w-32 capitalize">{key}</th>
-                    <td className="px-2 py-1">{value}</td>
+                    {/* Convert value to string so React knows it’s safe to render */}
+                    <td className="px-2 py-1">{String(value)}</td>
                   </tr>
                 ))}
               </tbody>
