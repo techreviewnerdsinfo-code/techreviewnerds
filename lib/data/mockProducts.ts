@@ -1,5 +1,5 @@
-import products from '@/data/products.json';
-import { Product } from '@/types/product';
+import products from '../../data/products.json';
+import type { Product } from '../../types/product';
 
 export function getAllProducts(): Product[] {
   return products as Product[];
