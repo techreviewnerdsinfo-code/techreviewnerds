@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { SUB_NICHES } from '@/config/site';
 
-export default function CategoryNavigation() {
+// Named export for pages that import { CategoryNavigation }
+export function CategoryNavigation() {
   const pathname = usePathname();
 
   return (
@@ -29,3 +30,6 @@ export default function CategoryNavigation() {
     </nav>
   );
 }
+
+// Default export for default imports
+export default CategoryNavigation;

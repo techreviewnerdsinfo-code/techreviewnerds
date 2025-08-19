@@ -1,14 +1,10 @@
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom global styles */
+/* Global custom styles */
 body {
-  @apply bg-gray-50 text-gray-900;
-}
-
-a {
-  @apply text-blue-600 hover:underline;
+  /* Set neutral background and default text colour */
+  background-color: rgb(249 250 251);
+  color: rgb(17 24 39);
 }
