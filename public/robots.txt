@@ -1,9 +1,0 @@
-# Robots exclusion protocol for Tech Review Nerds
-User-agent: *
-Allow: /
-
-# Point search engines to our XML sitemap
-Sitemap: https://techreviewnerds.com/sitemap.xml
-
-# Our site uses mock product data until our Amazon PA‑API is approved.
-# We still allow crawlers to index pages so that the domain can be reviewed.
