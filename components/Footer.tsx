@@ -1,30 +1,18 @@
-import { CONTACT_EMAIL, BRAND_NAME } from '@/config/site';
+import Link from 'next/link';
 
-/**
- * Global footer displayed at the bottom of every page.
- */
-export const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
+export default function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer className="mt-12 border-t border-gray-200 bg-white py-6 text-sm text-gray-600">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p>
-          &copy; {currentYear} {BRAND_NAME}. All rights reserved.
-        </p>
-        <nav className="flex flex-wrap items-center gap-4 text-sm">
-          <a href="/about" className="hover:underline">About</a>
-          <a href="/editorial-policy" className="hover:underline">Editorial Policy</a>
-          <a href="/testing-methodology" className="hover:underline">Testing Methodology</a>
-          <a href="/affiliate-disclosure" className="hover:underline">Affiliate Disclosure</a>
-          <a href="/contact" className="hover:underline">Contact</a>
+    <footer className="bg-gray-800 text-gray-300 py-8 mt-12">
+      <div className="container mx-auto text-center space-y-4">
+        <nav className="space-x-4">
+          <Link href="/about" className="hover:text-white">About</Link>
+          <Link href="/editorial-policy" className="hover:text-white">Editorial Policy</Link>
+          <Link href="/affiliate-disclosure" className="hover:text-white">Affiliate Disclosure</Link>
+          <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
         </nav>
-        <p>
-          Email us at{' '}
-          <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline font-medium">
-            {CONTACT_EMAIL}
-          </a>
-        </p>
+        <p className="text-sm">© {year} Tech Review Nerds.</p>
       </div>
     </footer>
   );
-};
+}

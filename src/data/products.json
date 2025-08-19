@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Budget Laptop A",
+    "slug": "budget-laptop-a",
+    "price": 399.99,
+    "rating": 4.3,
+    "category": "budget",
+    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg",
+    "description": "An affordable laptop with solid performance for everyday tasks.",
+    "specs": {
+      "Processor": "Intel Core i3",
+      "RAM": "8 GB",
+      "Storage": "256 GB SSD",
+      "Display": "14\" Full HD"
+    },
+    "features": [
+      "Lightweight design",
+      "Long battery life",
+      "HD webcam"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Budget Laptop B",
+    "slug": "budget-laptop-b",
+    "price": 499.99,
+    "rating": 4.5,
+    "category": "budget",
+    "image": "https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg",
+    "description": "A cost‑effective laptop that handles browsing, streaming and school work with ease.",
+    "specs": {
+      "Processor": "AMD Ryzen 5",
+      "RAM": "8 GB",
+      "Storage": "512 GB SSD",
+      "Display": "15.6\" Full HD"
+    },
+    "features": [
+      "Anti‑glare display",
+      "Numeric keypad",
+      "Fast SSD"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gaming Beast X1",
+    "slug": "gaming-beast-x1",
+    "price": 1499.99,
+    "rating": 4.8,
+    "category": "gaming",
+    "image": "https://images.pexels.com/photos/1694541/pexels-photo-1694541.jpeg",
+    "description": "A high‑performance gaming laptop with RGB keyboard and powerful GPU.",
+    "specs": {
+      "Processor": "Intel Core i7",
+      "RAM": "16 GB",
+      "Storage": "1 TB SSD",
+      "Display": "17.3\" QHD 165Hz"
+    },
+    "features": [
+      "NVIDIA RTX 4070 graphics",
+      "Per‑key RGB lighting",
+      "Advanced cooling system"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Gaming Beast Lite",
+    "slug": "gaming-beast-lite",
+    "price": 1299.99,
+    "rating": 4.6,
+    "category": "gaming",
+    "image": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
+    "description": "A gaming laptop that balances power and portability without breaking the bank.",
+    "specs": {
+      "Processor": "AMD Ryzen 7",
+      "RAM": "16 GB",
+      "Storage": "512 GB SSD",
+      "Display": "15.6\" Full HD 144Hz"
+    },
+    "features": [
+      "RTX 4060 graphics",
+      "Compact chassis",
+      "Dual‑fan cooling"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Student Essential 2025",
+    "slug": "student-essential-2025",
+    "price": 749.99,
+    "rating": 4.7,
+    "category": "student",
+    "image": "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg",
+    "description": "A reliable laptop for students featuring long battery life and cloud integration.",
+    "specs": {
+      "Processor": "Intel Core i5",
+      "RAM": "8 GB",
+      "Storage": "256 GB SSD",
+      "Display": "13.3\" Full HD"
+    },
+    "features": [
+      "Backlit keyboard",
+      "Fingerprint reader",
+      "Seamless cloud sync"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Student Essential Plus",
+    "slug": "student-essential-plus",
+    "price": 899.99,
+    "rating": 4.4,
+    "category": "student",
+    "image": "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg",
+    "description": "An upgraded student laptop with extra storage and a crisp display.",
+    "specs": {
+      "Processor": "Intel Core i7",
+      "RAM": "16 GB",
+      "Storage": "512 GB SSD",
+      "Display": "14\" Full HD"
+    },
+    "features": [
+      "Thin and light design",
+      "Thunderbolt 4 ports",
+      "Fast charge support"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Business Pro 15",
+    "slug": "business-pro-15",
+    "price": 1199.99,
+    "rating": 4.6,
+    "category": "business",
+    "image": "https://images.pexels.com/photos/706376/pexels-photo-706376.jpeg",
+    "description": "A professional business laptop built for multitasking and reliability.",
+    "specs": {
+      "Processor": "Intel Core i7 vPro",
+      "RAM": "16 GB",
+      "Storage": "512 GB NVMe",
+      "Display": "15\" Full HD"
+    },
+    "features": [
+      "Secure TPM chip",
+      "Matte display",
+      "Docking station compatibility"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Business Pro 17",
+    "slug": "business-pro-17",
+    "price": 1399.99,
+    "rating": 4.5,
+    "category": "business",
+    "image": "https://images.pexels.com/photos/274595/pexels-photo-274595.jpeg",
+    "description": "A large‑screen business laptop with plenty of ports and upgradeable components.",
+    "specs": {
+      "Processor": "AMD Ryzen 9",
+      "RAM": "32 GB",
+      "Storage": "1 TB SSD",
+      "Display": "17\" Full HD"
+    },
+    "features": [
+      "Full‑size keyboard",
+      "Easy maintenance",
+      "Wide port selection"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Ultrabook Air",
+    "slug": "ultrabook-air",
+    "price": 999.99,
+    "rating": 4.7,
+    "category": "ultrabook",
+    "image": "https://images.pexels.com/photos/705164/pexels-photo-705164.jpeg",
+    "description": "A sleek ultrabook perfect for executives on the move with all‑day battery life.",
+    "specs": {
+      "Processor": "Intel Core i5",
+      "RAM": "8 GB",
+      "Storage": "512 GB SSD",
+      "Display": "13.5\" QHD"
+    },
+    "features": [
+      "Ultra‑thin profile",
+      "Fast wake from sleep",
+      "Premium aluminum build"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Ultrabook Pro",
+    "slug": "ultrabook-pro",
+    "price": 1299.99,
+    "rating": 4.8,
+    "category": "ultrabook",
+    "image": "https://images.pexels.com/photos/18106/pexels-photo.jpg",
+    "description": "A powerful ultrabook with a stunning display and ample memory.",
+    "specs": {
+      "Processor": "Intel Core i7",
+      "RAM": "16 GB",
+      "Storage": "1 TB SSD",
+      "Display": "14\" 2K"
+    },
+    "features": [
+      "Edge‑to‑edge glass",
+      "Wi‑Fi 6E",
+      "High‑resolution webcam"
+    ]
+  }
+]

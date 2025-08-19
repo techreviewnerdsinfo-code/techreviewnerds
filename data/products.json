@@ -1,212 +1,206 @@
 [
   {
-    "id": 1,
-    "name": "Budget Laptop A",
-    "slug": "budget-laptop-a",
-    "price": 399.99,
+    "asin": "MOCK-XPS13-2025",
+    "title": "Dell XPS 13 (Mock)",
+    "image": "/images/xps13.jpg",
+    "price": "$999.00",
+    "rating": 4.5,
+    "features": ["13.4\" FHD+", "Intel i7-1360P", "16GB RAM", "512GB SSD", "2.6 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "business", "travel"],
+    "specs": {
+      "cpu": "i7-1360P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "2.6 lb",
+      "battery": "12–14h"
+    }
+  },
+  {
+    "asin": "MOCK-MACAIR-M2-2025",
+    "title": "MacBook Air M2 (Mock)",
+    "image": "/images/macbook-air-m2.jpg",
+    "price": "$1,099.00",
+    "rating": 4.6,
+    "features": ["13.6\" Liquid Retina", "Apple M2", "16GB Unified RAM", "512GB SSD", "2.7 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "business", "travel"],
+    "specs": {
+      "cpu": "M2",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "2.7 lb",
+      "battery": "18h"
+    }
+  },
+  {
+    "asin": "MOCK-ZEPHYRUS-M2-2025",
+    "title": "ASUS ROG Zephyrus M2 (Mock)",
+    "image": "/images/asus-rog-zephyrus-m2.jpg",
+    "price": "$2,199.00",
+    "rating": 4.5,
+    "features": ["16\" QHD 240Hz", "Ryzen 9 7900HS", "RTX 4070", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "engineering"],
+    "specs": {
+      "cpu": "Ryzen 9 7900HS",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "4.6 lb",
+      "battery": "8h"
+    }
+  },
+  {
+    "asin": "MOCK-T14-2025",
+    "title": "Lenovo ThinkPad T14 (Mock)",
+    "image": "/images/lenovo-t14.jpg",
+    "price": "$1,499.00",
     "rating": 4.3,
-    "category": "budget",
-    "image": "https://images.pexels.com/photos/18105/pexels-photo.jpg",
-    "description": "An affordable laptop with solid performance for everyday tasks.",
+    "features": ["14\" FHD", "Ryzen 7 Pro 5850U", "16GB RAM", "512GB SSD", "3.2 lb"],
+    "buy_url": "#",
+    "use_cases": ["business", "student", "developer"],
     "specs": {
-      "Processor": "Intel Core i3",
-      "RAM": "8 GB",
-      "Storage": "256 GB SSD",
-      "Display": "14\" Full HD"
-    },
-    "features": [
-      "Lightweight design",
-      "Long battery life",
-      "HD webcam"
-    ]
+      "cpu": "Ryzen 7 Pro 5850U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "3.2 lb",
+      "battery": "12h"
+    }
   },
   {
-    "id": 2,
-    "name": "Budget Laptop B",
-    "slug": "budget-laptop-b",
-    "price": 499.99,
-    "rating": 4.5,
-    "category": "budget",
-    "image": "https://images.pexels.com/photos/461077/pexels-photo-461077.jpeg",
-    "description": "A cost‑effective laptop that handles browsing, streaming and school work with ease.",
+    "asin": "MOCK-ASP5-2025",
+    "title": "Acer Aspire 5 (Mock)",
+    "image": "/images/acer-aspire-5.jpg",
+    "price": "$499.00",
+    "rating": 4.0,
+    "features": ["15.6\" FHD", "Core i5-1235U", "8GB RAM", "512GB SSD", "3.6 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "budget"],
     "specs": {
-      "Processor": "AMD Ryzen 5",
-      "RAM": "8 GB",
-      "Storage": "512 GB SSD",
-      "Display": "15.6\" Full HD"
-    },
-    "features": [
-      "Anti‑glare display",
-      "Numeric keypad",
-      "Fast SSD"
-    ]
+      "cpu": "Core i5-1235U",
+      "ram": "8GB",
+      "storage": "512GB SSD",
+      "weight": "3.6 lb",
+      "battery": "10h"
+    }
   },
   {
-    "id": 3,
-    "name": "Gaming Beast X1",
-    "slug": "gaming-beast-x1",
-    "price": 1499.99,
-    "rating": 4.8,
-    "category": "gaming",
-    "image": "https://images.pexels.com/photos/1694541/pexels-photo-1694541.jpeg",
-    "description": "A high‑performance gaming laptop with RGB keyboard and powerful GPU.",
+    "asin": "MOCK-HP15Z-2025",
+    "title": "HP 15z (Mock)",
+    "image": "/images/hp-15z.jpg",
+    "price": "$399.00",
+    "rating": 3.8,
+    "features": ["15.6\" HD", "Ryzen 3 3250U", "8GB RAM", "256GB SSD", "3.9 lb"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "budget"],
     "specs": {
-      "Processor": "Intel Core i7",
-      "RAM": "16 GB",
-      "Storage": "1 TB SSD",
-      "Display": "17.3\" QHD 165Hz"
-    },
-    "features": [
-      "NVIDIA RTX 4070 graphics",
-      "Per‑key RGB lighting",
-      "Advanced cooling system"
-    ]
+      "cpu": "Ryzen 3 3250U",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "weight": "3.9 lb",
+      "battery": "8h"
+    }
   },
   {
-    "id": 4,
-    "name": "Gaming Beast Lite",
-    "slug": "gaming-beast-lite",
-    "price": 1299.99,
-    "rating": 4.6,
-    "category": "gaming",
-    "image": "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
-    "description": "A gaming laptop that balances power and portability without breaking the bank.",
+    "asin": "MOCK-KATANA15-2025",
+    "title": "MSI Katana 15 (Mock)",
+    "image": "/images/msi-katana-15.jpg",
+    "price": "$1,099.00",
+    "rating": 4.0,
+    "features": ["15.6\" FHD 144Hz", "Core i7-12650H", "RTX 4050", "16GB RAM", "512GB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "student", "budget"],
     "specs": {
-      "Processor": "AMD Ryzen 7",
-      "RAM": "16 GB",
-      "Storage": "512 GB SSD",
-      "Display": "15.6\" Full HD 144Hz"
-    },
-    "features": [
-      "RTX 4060 graphics",
-      "Compact chassis",
-      "Dual‑fan cooling"
-    ]
+      "cpu": "Core i7-12650H",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "4.9 lb",
+      "battery": "6h"
+    }
   },
   {
-    "id": 5,
-    "name": "Student Essential 2025",
-    "slug": "student-essential-2025",
-    "price": 749.99,
-    "rating": 4.7,
-    "category": "student",
-    "image": "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg",
-    "description": "A reliable laptop for students featuring long battery life and cloud integration.",
+    "asin": "MOCK-PRED16-2025",
+    "title": "Acer Predator Helios 16 (Mock)",
+    "image": "/images/acer-predator-helios-16.jpg",
+    "price": "$1,599.00",
+    "rating": 4.3,
+    "features": ["16\" FHD 240Hz", "Core i7-13700HX", "RTX 4060", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "engineering"],
     "specs": {
-      "Processor": "Intel Core i5",
-      "RAM": "8 GB",
-      "Storage": "256 GB SSD",
-      "Display": "13.3\" Full HD"
-    },
-    "features": [
-      "Backlit keyboard",
-      "Fingerprint reader",
-      "Seamless cloud sync"
-    ]
+      "cpu": "Core i7-13700HX",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "5.7 lb",
+      "battery": "5h"
+    }
   },
   {
-    "id": 6,
-    "name": "Student Essential Plus",
-    "slug": "student-essential-plus",
-    "price": 899.99,
+    "asin": "MOCK-ALIENX16-2025",
+    "title": "Alienware x16 (Mock)",
+    "image": "/images/alienware-x16.jpg",
+    "price": "$2,499.00",
     "rating": 4.4,
-    "category": "student",
-    "image": "https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg",
-    "description": "An upgraded student laptop with extra storage and a crisp display.",
+    "features": ["16\" QHD 240Hz", "Core i9-13900HX", "RTX 4080", "32GB RAM", "2TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "creative", "premium"],
     "specs": {
-      "Processor": "Intel Core i7",
-      "RAM": "16 GB",
-      "Storage": "512 GB SSD",
-      "Display": "14\" Full HD"
-    },
-    "features": [
-      "Thin and light design",
-      "Thunderbolt 4 ports",
-      "Fast charge support"
-    ]
+      "cpu": "Core i9-13900HX",
+      "ram": "32GB",
+      "storage": "2TB SSD",
+      "weight": "6.0 lb",
+      "battery": "4h"
+    }
   },
   {
-    "id": 7,
-    "name": "Business Pro 15",
-    "slug": "business-pro-15",
-    "price": 1199.99,
-    "rating": 4.6,
-    "category": "business",
-    "image": "https://images.pexels.com/photos/706376/pexels-photo-706376.jpeg",
-    "description": "A professional business laptop built for multitasking and reliability.",
+    "asin": "MOCK-FLEX5-2025",
+    "title": "Lenovo IdeaPad Flex 5 (Mock)",
+    "image": "/images/lenovo-ideapad-flex-5.jpg",
+    "price": "$699.00",
+    "rating": 4.1,
+    "features": ["14\" FHD Touch", "Ryzen 5 7530U", "16GB RAM", "512GB SSD", "Convertible"],
+    "buy_url": "#",
+    "use_cases": ["student", "home", "2-in-1"],
     "specs": {
-      "Processor": "Intel Core i7 vPro",
-      "RAM": "16 GB",
-      "Storage": "512 GB NVMe",
-      "Display": "15\" Full HD"
-    },
-    "features": [
-      "Secure TPM chip",
-      "Matte display",
-      "Docking station compatibility"
-    ]
+      "cpu": "Ryzen 5 7530U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "weight": "3.3 lb",
+      "battery": "10h"
+    }
   },
   {
-    "id": 8,
-    "name": "Business Pro 17",
-    "slug": "business-pro-17",
-    "price": 1399.99,
-    "rating": 4.5,
-    "category": "business",
-    "image": "https://images.pexels.com/photos/274595/pexels-photo-274595.jpeg",
-    "description": "A large‑screen business laptop with plenty of ports and upgradeable components.",
+    "asin": "MOCK-SPECTRE-2025",
+    "title": "HP Spectre x360 (Mock)",
+    "image": "/images/hp-spectre-x360.jpg",
+    "price": "$1,299.00",
+    "rating": 4.4,
+    "features": ["13.5\" OLED", "Core i7-1355U", "16GB RAM", "1TB SSD", "Convertible"],
+    "buy_url": "#",
+    "use_cases": ["business", "creative", "travel"],
     "specs": {
-      "Processor": "AMD Ryzen 9",
-      "RAM": "32 GB",
-      "Storage": "1 TB SSD",
-      "Display": "17\" Full HD"
-    },
-    "features": [
-      "Full‑size keyboard",
-      "Easy maintenance",
-      "Wide port selection"
-    ]
+      "cpu": "Core i7-1355U",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "3.0 lb",
+      "battery": "13h"
+    }
   },
   {
-    "id": 9,
-    "name": "Ultrabook Air",
-    "slug": "ultrabook-air",
-    "price": 999.99,
-    "rating": 4.7,
-    "category": "ultrabook",
-    "image": "https://images.pexels.com/photos/705164/pexels-photo-705164.jpeg",
-    "description": "A sleek ultrabook perfect for executives on the move with all‑day battery life.",
+    "asin": "MOCK-G15-2025",
+    "title": "Dell G15 Gaming (Mock)",
+    "image": "/images/dell-g15.jpg",
+    "price": "$1,299.00",
+    "rating": 4.2,
+    "features": ["15.6\" FHD 165Hz", "Ryzen 7 7840HS", "RTX 4060", "16GB RAM", "1TB SSD"],
+    "buy_url": "#",
+    "use_cases": ["gaming", "student", "budget"],
     "specs": {
-      "Processor": "Intel Core i5",
-      "RAM": "8 GB",
-      "Storage": "512 GB SSD",
-      "Display": "13.5\" QHD"
-    },
-    "features": [
-      "Ultra‑thin profile",
-      "Fast wake from sleep",
-      "Premium aluminum build"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "Ultrabook Pro",
-    "slug": "ultrabook-pro",
-    "price": 1299.99,
-    "rating": 4.8,
-    "category": "ultrabook",
-    "image": "https://images.pexels.com/photos/18106/pexels-photo.jpg",
-    "description": "A powerful ultrabook with a stunning display and ample memory.",
-    "specs": {
-      "Processor": "Intel Core i7",
-      "RAM": "16 GB",
-      "Storage": "1 TB SSD",
-      "Display": "14\" 2K"
-    },
-    "features": [
-      "Edge‑to‑edge glass",
-      "Wi‑Fi 6E",
-      "High‑resolution webcam"
-    ]
+      "cpu": "Ryzen 7 7840HS",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "weight": "5.5 lb",
+      "battery": "7h"
+    }
   }
 ]

@@ -1,31 +1,18 @@
-"use client";
 import Link from 'next/link';
 
-/**
- * Breadcrumbs
- *
- * Displays a trail of links to help users orient themselves on the site.
- */
-export interface BreadcrumbItem {
+export interface Crumb {
   label: string;
   href?: string;
 }
 
-interface BreadcrumbsProps {
-  items: BreadcrumbItem[];
-}
-
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
+export default function Breadcrumbs({ crumbs }: { crumbs: Crumb[] }) {
   return (
     <nav aria-label="Breadcrumb" className="text-sm text-gray-600 mb-4">
-      {items.map((crumb, index) => (
+      {crumbs.map((crumb, index) => (
         <span key={index}>
           {crumb.href ? (
             <>
-              <Link href={crumb.href} className="hover:underline">
-                {crumb.label}
-              </Link>
-              {index < items.length - 1 && ' / '}
+              <Link href={crumb.href} className="hover:underline">{crumb.label}</Link> /{' '}
             </>
           ) : (
             <span className="text-gray-800 font-medium">{crumb.label}</span>
@@ -34,6 +21,4 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items }) => {
       ))}
     </nav>
   );
-};
-
-export default Breadcrumbs;
+}

@@ -15,7 +15,9 @@ const nextConfig = {
       },
     ],
   },
-  // No experimental.appDir here – Next.js 14 uses the root-level app folder by default
+  experimental: {
+    appDir: true,
+  },
 };
 
 export default nextConfig;

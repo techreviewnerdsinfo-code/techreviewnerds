@@ -1,24 +1,70 @@
-// Build an ItemList schema for a list of items
-export function buildItemList(items: { url: string; name: string }[]): string {
-  const schema = {
+/*
+ * SEO Schema Helpers
+ *
+ * Helper functions for building JSON‑LD structured data. Use them on your
+ * pages to generate ItemList, Product and FAQPage schemas.
+ */
+export interface ItemListEntry {
+  url: string;
+  name: string;
+}
+export function buildItemList(items: ItemListEntry[]): string {
+  const itemList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      item: {
-        '@type': 'Thing',
-        url: item.url,
-        name: item.name,
-      },
+      url: item.url,
+      name: item.name,
     })),
+  };
+  return JSON.stringify(itemList);
+}
+
+export interface ProductOffer {
+  name: string;
+  description: string;
+  image: string;
+  brand: string;
+  price: number;
+  priceCurrency: string;
+  url: string;
+  rating: number;
+}
+export function buildProductOffer(product: ProductOffer): string {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    image: product.image,
+    brand: {
+      '@type': 'Brand',
+      name: product.brand,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: product.price,
+      priceCurrency: product.priceCurrency,
+      availability: 'https://schema.org/InStock',
+      url: product.url,
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: product.rating,
+      reviewCount: 1,
+    },
   };
   return JSON.stringify(schema);
 }
 
-// Build a FAQPage schema
-export function buildFAQPage(faqs: { question: string; answer: string }[]): string {
-  const schema = {
+export interface FAQEntry {
+  question: string;
+  answer: string;
+}
+export function buildFAQPage(faqs: FAQEntry[]): string {
+  const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqs.map((faq) => ({
@@ -30,32 +76,5 @@ export function buildFAQPage(faqs: { question: string; answer: string }[]): stri
       },
     })),
   };
-  return JSON.stringify(schema);
-}
-
-// Build a Product/Offer schema (if you need it)
-export function buildProductOffer(args: {
-  name: string;
-  description: string;
-  url: string;
-  image: string;
-  price: string;
-  brand: string;
-}): string {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: args.name,
-    description: args.description,
-    image: [args.image],
-    brand: { '@type': 'Brand', name: args.brand },
-    offers: {
-      '@type': 'Offer',
-      url: args.url,
-      price: args.price,
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-    },
-  };
-  return JSON.stringify(schema);
+  return JSON.stringify(faqSchema);
 }
