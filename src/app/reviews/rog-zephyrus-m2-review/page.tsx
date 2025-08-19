@@ -4,89 +4,76 @@ import { findByAsin } from '@/lib/data/getProducts';
 import { buildProductOffer, buildFAQPage } from '@/lib/seo/schema';
 
 export const metadata: Metadata = {
-  title: 'ROG Zephyrus M2 Review – Slim Gaming Beast',
+  title: 'ASUS ROG Zephyrus M2 Review – Portable Powerhouse',
   description:
-    'Our in‑depth review of the ASUS ROG Zephyrus M2 covers its gaming performance, thermals and portability to see if it’s the ideal thin‑and‑light gaming laptop.',
+    'Our review dives into the ASUS ROG Zephyrus M2, analysing its gaming performance, portability and overall value for gamers in 2025.',
   alternates: {
     canonical: 'https://techreviewnerds.com/reviews/rog-zephyrus-m2-review',
   },
 };
 
 const Page = () => {
-  // Retrieve mock product data by ASIN
   const product = findByAsin('MOCK-ZEPHYRUS-M2-2025');
   if (!product) return null;
-
-  // Overview and verdict
   const overview =
-    'ASUS’s ROG Zephyrus M2 packs high‑end gaming performance into a surprisingly slim chassis. The 2025 refresh includes an upgraded GPU and improved cooling while retaining its sleek design.';
+    'The ROG Zephyrus M2 packs top‑tier gaming hardware into a surprisingly thin chassis. With an RTX 4070 GPU and a fast QHD display, it targets gamers who need serious power without lugging a bulky machine.';
   const strengths = [
-    'Excellent RTX 40‑series graphics performance',
-    'Slim and lightweight for a gaming laptop',
-    'High‑refresh QHD display with good colour accuracy',
-    'Responsive keyboard and large precision touchpad',
+    'Outstanding gaming performance in a slim design',
+    'Bright, colour‑accurate QHD display with 240Hz refresh',
+    'Impressive port selection',
+    'Quiet under light loads',
   ];
   const weaknesses = [
-    'Runs hot under sustained loads',
-    'Battery life is mediocre',
-    'Limited upgradeability',
+    'Very expensive',
+    'Gets hot under sustained loads',
+    'Battery life suffers during gaming sessions',
   ];
   const verdict =
-    'If you want a thin‑and‑light gaming machine that doesn’t skimp on power, the Zephyrus M2 is an outstanding choice. Its thermals and battery life aren’t the best, but the performance per pound is impressive.';
-
-  // Related links
+    'The Zephyrus M2 is a dream machine for gamers who demand desktop‑level performance on the go. Its price and thermals are the trade‑offs for its powerhouse specs.';
   const alternatives = [
-    { href: '/best-gaming-laptops', title: 'Best gaming laptops 2025' },
-    { href: '/comparisons/dell-g15-vs-msi-katana-15', title: 'Dell G15 vs MSI Katana 15 comparison' },
-    { href: '/reviews/dell-xps-13-review', title: 'Dell XPS 13 review' },
+    { href: '/best-gaming-laptops', title: 'Best gaming laptops' },
+    { href: '/reviews/lenovo-t14-review', title: 'Lenovo T14 review' },
   ];
-
-  // Frequently asked questions
   const faqs = [
     {
-      question: 'Can I upgrade the RAM or storage?',
+      question: 'Does the Zephyrus M2 have a MUX switch?',
       answer:
-        'The Zephyrus M2 has one open M.2 slot for storage upgrades. RAM is soldered and not upgradeable.',
+        'Yes, it includes a MUX switch that lets you bypass the integrated graphics for maximum gaming performance.',
     },
     {
-      question: 'Does it support G‑Sync?',
+      question: 'Can you upgrade the RAM or storage?',
       answer:
-        'Yes, the built‑in display supports NVIDIA G‑Sync for tear‑free gaming, and you can connect an external G‑Sync monitor via USB‑C.',
+        'The RAM is soldered, but there is an additional M.2 slot for expanding storage. Choose the configuration that meets your needs.',
     },
     {
-      question: 'How loud are the fans?',
+      question: 'How loud does it get under load?',
       answer:
-        'Under heavy gaming loads, fan noise is noticeable but still quieter than many competing gaming laptops. In lighter tasks, the fans remain relatively quiet.',
+        'During intense gaming, fan noise becomes noticeable but not overpowering. Using headphones will mitigate any distraction.',
     },
   ];
-
-  // Create product/offer schema: price is a string and no rating is passed.
   const productOfferJson = buildProductOffer({
     name: product.title,
     description: product.features.join(', '),
     image: `https://techreviewnerds.com${product.image}`,
     brand: 'ASUS',
-    price: product.price.replace(/[^0-9.]/g, ''),
+    price: parseFloat(product.price.replace(/[^0-9.]/g, '')),
+    priceCurrency: 'USD',
     url: `https://techreviewnerds.com/reviews/${product.asin.toLowerCase()}-review`,
+    rating: product.rating,
   });
-
-  // Create FAQ schema
   const faqJson = buildFAQPage(faqs);
-
-  // Combine into a single JSON‑LD graph
   const jsonLd = JSON.stringify({
     '@context': 'https://schema.org',
     '@graph': [JSON.parse(productOfferJson), JSON.parse(faqJson)],
   });
-
   return (
     <ReviewTemplate
       breadcrumbs={[
         { label: 'Home', href: '/' },
         { label: 'Reviews', href: '/' },
-        { label: product.title, href: `/reviews/${product.asin.toLowerCase()}-review` },
+        { label: 'ROG Zephyrus M2', href: '/reviews/rog-zephyrus-m2-review' },
       ]}
-      title={`${product.title} review`}
+      title="ASUS ROG Zephyrus M2 review"
       overview={overview}
       specs={product.specs}
       strengths={strengths}
