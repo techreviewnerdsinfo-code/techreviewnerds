@@ -15,9 +15,7 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true,
-  },
+  // no experimental.appDir here
 };
 
 export default nextConfig;
